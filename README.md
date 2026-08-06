@@ -95,12 +95,15 @@ MIT
 mkdir tmp
 cd tmp
 uv venv --seed --clear -n --python 3.14
-uv pip install cookiecutter
 source .venv/bin/activate
+uv pip install cookiecutter
 ```
 
 
 ```bash
-
 python -m cookiecutter ../. --replay --replay-file ../replays/python-workouts.json
+```
+
+```bash
+python -m cookiecutter https://github.com/RamonAlcantaraArceo/viper-cookiecutter --replay --replay-file ../replays/python-workouts.json
 ```
