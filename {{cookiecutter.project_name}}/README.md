@@ -12,12 +12,18 @@
 ### Create and activate a virtual environment
 
 ```bash
-uv venv
+uv venv --seed
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
 ```
 
 ### Install dependencies
+
+```bash
+uv sync --all-extras --all-groups
+```
+
+To install using pip:
 
 ```bash
 uv pip install -e ".[dev]"

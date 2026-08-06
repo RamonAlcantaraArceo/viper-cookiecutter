@@ -16,8 +16,10 @@ This file provides guidance to GitHub Copilot for AI-assisted development in thi
 - All code is linted and formatted with **ruff** (`line-length = 88`, `target-version = "py314"`).
 - Enabled ruff rule sets: `E`, `F`, `I`, `UP`, `B`, `SIM`.
 - Use type annotations on all public functions and methods.
+- Document all public functions, methods, and modules using docstrings following [Google style](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings).
 - Prefer `pathlib.Path` over `os.path` for file system operations.
 - Use f-strings for string formatting.
+
 
 ## Testing Expectations
 

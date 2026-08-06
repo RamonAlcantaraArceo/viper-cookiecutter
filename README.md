@@ -20,8 +20,15 @@ A [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for mode
 ## Usage
 
 ```bash
-cookiecutter https://github.com/RamonAlcantaraArceo/viper-cookiecutter
+cookiecutter https://github.com/RamonAlcantaraArceo/viper-cookiecutter --checkout copilot/initialize-cookiecutter-template
+
+python -m cookiecutter https://github.com/RamonAlcantaraArceo/viper-cookiecutter --checkout copilot/initialize-cookiecutter-template --replay
 ```
+
+Some options:
+
+- `--checkout` to use a specific branch
+- `--replay` to perform a replay on some answers previously provided
 
 You will be prompted for the following variables:
 
@@ -81,3 +88,19 @@ ruff format .
 ## License
 
 MIT
+
+## Sample
+
+```bash
+mkdir tmp
+cd tmp
+uv venv --seed --clear -n --python 3.14
+uv pip install cookiecutter
+source .venv/bin/activate
+```
+
+
+```bash
+
+python -m cookiecutter ../. --replay --replay-file ../replays/python-workouts.json
+```

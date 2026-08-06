@@ -1,0 +1,15 @@
+{
+  "cookiecutter": {
+    "project_name": "python-workouts",
+    "package_name": "python_workouts",
+    "description": "Python Workout Exercises",
+    "author_name": "Ramon Alcantara",
+    "email": "ramon.alcantara@live.com",
+    "version": "0.0.1",
+    "use_github_actions": "yes",
+    "_template": "../.",
+    "_output_dir": "/Users/ramonalcantara/github/viper-cookiecutter/tmp",
+    "_repo_dir": "../.",
+    "_checkout": null
+  }
+}
