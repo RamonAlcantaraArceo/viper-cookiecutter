@@ -67,8 +67,7 @@ my-project/
 
 ```bash
 uv venv
-source .venv/bin/activate   # Linux/macOS
-.venv\Scripts\activate      # Windows
+source .venv/bin/activate
 uv pip install -e ".[dev]"
 ```
 
@@ -94,6 +93,8 @@ MIT
 ```bash
 mkdir tmp
 cd tmp
+mkdir viper
+cd viper
 uv venv --seed --clear -n --python 3.14
 source .venv/bin/activate
 uv pip install cookiecutter
@@ -102,6 +103,10 @@ uv pip install cookiecutter
 
 ```bash
 python -m cookiecutter ../. --replay --replay-file ../replays/python-workouts.json
+```
+
+```bash
+python -m cookiecutter ../../viper-cookiecutter --replay --replay-file ../../viper-cookiecutter/replays/python-workouts.json
 ```
 
 ```bash
