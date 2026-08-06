@@ -1,6 +1,6 @@
 # Python
 __pycache__/
-*.py[codz]
+*.py[cod]
 *.egg-info/
 .eggs/
 dist/
@@ -20,7 +20,8 @@ htmlcov/
 .ruff_cache/
 
 # uv
-uv.lock
+# uv.lock is typically committed for reproducibility; uncomment to ignore:
+# uv.lock
 
 # Editors
 .vscode/
