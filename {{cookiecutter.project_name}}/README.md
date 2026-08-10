@@ -13,8 +13,7 @@
 
 ```bash
 uv venv --seed
-source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate     # Windows
+source .venv/bin/activate
 ```
 
 ### Install dependencies
@@ -32,7 +31,7 @@ uv pip install -e ".[dev]"
 ## Running Tests
 
 ```bash
-pytest
+uv run pytest
 ```
 
 ## Linting and Formatting
@@ -40,31 +39,34 @@ pytest
 Run the linter:
 
 ```bash
-ruff check .
+uv run ruff check .
 ```
 
 Auto-fix issues:
 
 ```bash
-ruff check --fix .
+uv run ruff check --fix .
 ```
 
 Format code:
 
 ```bash
-ruff format .
+uv run ruff format .
 ```
 
 ## Project Structure
 
 ```
 {{ cookiecutter.project_name }}/
+├── .vscode/
+│   └── settings.json
 ├── src/
 │   └── {{ cookiecutter.package_name }}/
 │       ├── __init__.py
 │       └── main.py
 ├── tests/
 │   └── test_basic.py
+├── .gitignore
 ├── pyproject.toml
 └── README.md
 ```
